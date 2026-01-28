@@ -1,0 +1,130 @@
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.appHeader {
+  margin-bottom: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 980px) {
+  .grid {
+    grid-template-columns: 420px 1fr;
+    align-items: start;
+  }
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 14px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeader {
+  margin-bottom: 10px;
+}
+
+.cardHeader h2 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.muted {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.vizWrap {
+  overflow: auto;
+}
+
+.viz {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.vizBg {
+  fill: #fafafa;
+  stroke: #e6e6e6;
+}
+
+.vizPoint {
+  fill: #111;
+  opacity: 0.9;
+}
+
+.vizLabel {
+  font-size: 11px;
+  fill: #333;
+  user-select: none;
+}
+
+.solutionPath {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  font-size: 13px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 140px;
+  overflow: auto;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid #ddd;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.iterBox {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+input[type="file"] {
+  width: 100%;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+}
